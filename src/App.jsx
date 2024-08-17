@@ -17,6 +17,7 @@ import Error from "./pages/Error";
 import ProductDetail from "./pages/ProductDetail";
 import appStore from "./utils/appStore";
 import ShoppingCart from "./pages/ShoppingCart";
+import Login from "./components/Login";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
         element={<ProductDetail />}
       />
       <Route path="/shopping-cart" element={<ShoppingCart />} />
+      <Route path="/login" element={<Login />} />
       <Route path="*" element={<Error />} />
     </Route>
   )
